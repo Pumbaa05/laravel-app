@@ -7,6 +7,12 @@ use Illuminate\View\Factory as ViewFactory;
 use App\Http\Controllers\Controller;
 //use App\Contracts\Repository\ServerRepositoryInterface;
 
+/*
+|--------------------------------------------------------------------------
+| Index Controller
+|--------------------------------------------------------------------------
+*/
+
 class IndexController extends Controller
 {
     /**
