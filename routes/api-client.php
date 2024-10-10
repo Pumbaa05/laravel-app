@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('api')->group(function () {
-    Route::get('/users', 'Api\UserController@index');
-    Route::get('/users/{id}', 'Api\UserController@show');
-    // Other API routes
+    Route::prefix('auth')->group(function () {
+        Route::post('login',[LoginController::class, 'index'])->name('');
+    });
 });
