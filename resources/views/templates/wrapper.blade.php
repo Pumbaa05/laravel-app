@@ -19,12 +19,12 @@
             <meta name="theme-color" content="#0e4688">
         @show
 
-        <style>
-        </style>
-
         @yield('assets')
 
         @include('layouts.scripts')
+
+        @viteReactRefresh
+        @vite(['resources/js/index.jsx', 'resources/css/app.css'])
     </head>
     <body class="{{ $css['body'] ?? 'bg-neutral-50' }}">
         @section('content')
