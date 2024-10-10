@@ -5,6 +5,7 @@ export const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<h1>hello</h1>} />
+                <Route path="/about" element={<h1>about</h1>} />
             </Routes>
         </BrowserRouter>
     );
